@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: fabrica-api
+    runtime: python
+    plan: free
+    buildCommand: ""
+    startCommand: python api_cultivo.py
+    envVars:
+      - key: FABRICA_DRIVE
+        value: "1"
+      - key: API_REQUIRE_KEY
+        value: "1"
+      - key: API_KEY
+        value: "cambiar-por-clave-fuerte"
+      - key: GOOGLE_TOKEN_JSON
+        sync: false
