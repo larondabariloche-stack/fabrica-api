@@ -1,1 +1,1 @@
-flask
+# Sin dependencias externas: stdlib puro (http.server + urllib)
