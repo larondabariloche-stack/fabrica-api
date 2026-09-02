@@ -47,7 +47,7 @@ SALAS = {
     "Sala Vege Catamarca": "Crecimiento",
     "Sala C - Automáticas": "Crecimiento",
 }
-PORT = int(os.environ.get("API_CULTIVO_PORT", "8082"))
+PORT = int(os.environ.get("PORT") or os.environ.get("API_CULTIVO_PORT") or "8082")
 SECCIONES_VALIDAS = {"cultivo", "aceites", "gomitas", "infraestructura", "dispensa"}
 
 API_KEY = os.environ.get("API_KEY", "2019")
